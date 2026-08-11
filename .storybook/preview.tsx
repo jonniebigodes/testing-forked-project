@@ -1,6 +1,7 @@
 import type { Preview } from "@storybook/react-vite";
 import { ThemeProvider } from "@emotion/react";
 import { theme } from "../src/tokens/theme";
+import { allModes } from "../modes-config/modes";
 
 const preview: Preview = {
   decorators: [
@@ -11,13 +12,20 @@ const preview: Preview = {
     ),
   ],
   parameters: {
+    chromatic: {
+      modes: {
+        tiny: allModes.xsm,
+        medium: allModes.md,
+        xlarge: allModes.xl,
+      },
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,
         date: /Date$/i,
       },
     },
-    /*  viewport: {
+    viewport: {
       options: {
         xsm: { name: "XSmall", styles: { width: "320px", height: "900px" } },
         sm: { name: "Small", styles: { width: "640px", height: "900px" } },
@@ -27,7 +35,7 @@ const preview: Preview = {
         "2xl": { name: "2XL", styles: { width: "1536px", height: "900px" } },
         folded: { name: "Folded", styles: { width: "280px", height: "653px" } },
       },
-    }, */
+    },
     a11y: {
       // 'todo' - show a11y violations in the test UI only
       // 'error' - fail CI on a11y violations
