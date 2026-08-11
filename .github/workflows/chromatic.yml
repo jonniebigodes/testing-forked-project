@@ -1,6 +1,13 @@
 name: "Chromatic"
 
-on: push
+on:
+  push:
+  pull_request_target:
+    branches: [main]
+
+permissions:
+  contents: read
+  pull-requests: write
 
 jobs:
   chromatic:
@@ -11,6 +18,7 @@ jobs:
         uses: actions/checkout@v7
         with:
           fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha || github.ref }}
       - uses: actions/setup-node@v7
         with:
           node-version: 24.13.0
