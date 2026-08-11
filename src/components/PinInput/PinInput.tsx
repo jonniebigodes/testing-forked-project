@@ -36,6 +36,9 @@ const sanitize = (
   }
 };
 
+/**
+ * This component renders a segmented PIN/OTP input made up of `maxLength` single-character boxes that accepts numeric, alphabetic, or alphanumeric input depending on the `type` prop. It supports controlled and uncontrolled usage via `value` and `onValueChange`, automatically advances focus as characters are typed or removed, and handles arrow-key navigation, backspace, and pasting a full code across the boxes. The `mask` prop hides entered characters like a password field, `otp` enables browser one-time-code autofill, and a hidden input keeps the combined value available for native form submission.
+ */
 export default function PinInput({
   value,
   onValueChange,

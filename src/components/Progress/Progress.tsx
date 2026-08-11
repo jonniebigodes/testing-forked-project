@@ -11,6 +11,9 @@ export interface ProgressProps {
   children?: ReactNode;
 }
 
+/**
+ * This component renders a progress bar that visualizes a `value` between `min` and `max` as a filled track, defaulting to a horizontal layout but supporting a vertical orientation via the `orientation` prop. The `children` prop is shown as a label above the bar alongside the computed percentage, and the `disabled` and `readOnly` props adjust its appearance and interactivity accordingly. It exposes `progressbar` ARIA attributes, including `aria-valuenow`, `aria-valuemin`, and `aria-valuemax`, so assistive technology can announce the current progress.
+ */
 export default function Progress({
   min = 0,
   max = 100,

@@ -19,6 +19,9 @@ export interface FormProps
   children: ReactNode;
 }
 
+/**
+ * This component renders a styled form element that lays out its `children` (typically form fields) in a vertical stack. The `inverted` prop switches the background and border colors for dark mode contexts, and the `gap` prop controls the spacing between child elements, defaulting to the theme's spacing scale. Any additional native form attributes passed in are spread onto the underlying form element.
+ */
 const Form = ({
   inverted = false,
   gap,

@@ -82,6 +82,9 @@ const toComparable = (date: DateValue | undefined) =>
 const sameDay = (a: DateValue, b: DateValue) =>
   a.year === b.year && a.month === b.month && a.day === b.day;
 
+/**
+ * This component renders a full month-view date picker built on `@internationalized/date`, supporting both single and multiple date selection via the `type` and `value`/`onValueChange` props. It manages its own focused month internally, offers previous/next month navigation, and supports constraints such as `minValue`, `maxValue`, `isDateDisabled`, `isDateUnavailable`, and a maximum number of selectable days via `maxDays`. Locale-aware weekday and month labels are generated from the `locale`, `weekdayFormat`, and `monthFormat` props, and the grid uses a `grid` role with `aria-selected`/`aria-disabled` on each day along with a hidden input so the selected dates can participate in native form submission.
+ */
 export default function Calendar({
   type = 'single',
   value,

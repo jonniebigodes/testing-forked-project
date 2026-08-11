@@ -15,6 +15,9 @@ export interface HeaderProps {
   onLinkClick?: (link: HeaderLink) => void;
 }
 
+/**
+ * This component renders a page header with a `title`, optional `logo`, and a list of navigation `links`. The `isSticky` prop pins the header to the top of the viewport, `inverted` switches to a dark color scheme, and `fullWidth` removes the max-width constraint on the inner content. The `onLinkClick` callback is invoked whenever a navigation link is clicked, letting consumers hook into navigation events.
+ */
 const Header = ({
   title = 'Application',
   links = [],

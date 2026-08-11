@@ -25,6 +25,9 @@ export interface CollapsibleProps {
   children?: ReactNode;
 }
 
+/**
+ * This component is a simple collapsible section that lets users show or hide a block of content by clicking its header. It accepts `label` for the trigger content and `children` for the content that is revealed, along with `open` and `onOpenChange` for controlled usage and `disabled` to prevent toggling. The component manages its own open state when left uncontrolled, rotates a chevron icon to reflect the current state, and exposes `aria-expanded` and `aria-controls` on the trigger along with a `role="region"` on the content for accessibility.
+ */
 const Collapsible = ({
   open,
   onOpenChange,

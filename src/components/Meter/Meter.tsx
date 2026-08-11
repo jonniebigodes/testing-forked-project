@@ -12,6 +12,9 @@ export interface MeterProps {
   high?: number;
 }
 
+/**
+ * This component displays a meter that visualizes a `value` within a `min`/`max` range as a percentage-filled bar. The optional `optimum`, `low`, and `high` props determine threshold ranges used to color the bar green, yellow, or pink depending on how the current value compares to the optimum range. It renders with `role="meter"` and the corresponding `aria-valuenow`/`aria-valuemin`/`aria-valuemax` attributes for accessibility, and `children` can be used to render a label alongside the meter.
+ */
 export default function Meter({
   min = 0,
   max = 100,

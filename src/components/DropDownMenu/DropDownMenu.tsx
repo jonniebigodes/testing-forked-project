@@ -28,6 +28,9 @@ export interface DropDownMenuProps {
   onSelect?: (item: string) => void;
 }
 
+/**
+ * This component is a dropdown menu button that reveals a list of selectable options when clicked. It accepts a `label` for the trigger button and an array of `children` strings to populate the menu items, calling `onSelect` with the chosen item. The `color` prop customizes the button's background, while `inverted` switches to a dark color scheme. The component manages its own open/closed state, closing automatically when clicking outside the menu or pressing Escape, and exposes `aria-haspopup`, `aria-expanded`, and `role="menu"`/`role="menuitem"` attributes for accessibility.
+ */
 const DropDownMenu = ({
   color: customColor,
   label,

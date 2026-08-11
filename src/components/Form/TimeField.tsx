@@ -35,6 +35,9 @@ function parseTimeString(timeString: string): TimeValue {
   };
 }
 
+/**
+ * This component renders a labeled time input, wrapping a native time input with a styled container and an optional clear button. It accepts a `value`/`onValueChange` pair for controlled usage, where changes are parsed into a structured `TimeValue` object, plus `minValue`, `maxValue`, `disabled`, `readOnly`, `required`, and `allowSeconds` props to constrain input. When `children` are provided they are rendered as the field's label, with a required-indicator asterisk shown when applicable, and the clear button includes an `aria-label` for screen readers.
+ */
 export default function TimeField({
   value,
   onValueChange,

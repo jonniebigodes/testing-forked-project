@@ -12,6 +12,9 @@ export interface AspectRatioProps {
   children?: ReactNode;
 }
 
+/**
+ * This component constrains its `children` to a fixed aspect ratio, such as 16/9 or 4/3, specified through the required `ratio` prop. It achieves this using the padding-bottom percentage technique on a relatively positioned wrapper, then absolutely positions and centers the content within it. This is useful for keeping media like images, videos, or embeds visually consistent regardless of their intrinsic dimensions.
+ */
 const AspectRatio = ({ ratio, children }: AspectRatioProps) => {
   return (
     <div
