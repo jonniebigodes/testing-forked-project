@@ -27,6 +27,9 @@ export interface FooterProps {
   onLinkClick?: (link: string) => void;
 }
 
+/**
+ * This component renders a page footer with a centered copyright label and an optional row of navigation links built from the `children` array of link labels. The `color` prop overrides the background color, while `inverted` swaps the color scheme for a lighter, higher-contrast look. Clicking a link invokes the `onLinkClick` callback with the clicked label, and the link row wraps onto multiple lines to stay responsive when space is limited.
+ */
 const Footer = ({
   color: customColor,
   label = "© 2025 Company Name. All rights reserved.",

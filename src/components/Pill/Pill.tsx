@@ -90,6 +90,9 @@ const getVariantStyles = (
   return variantMap[variant];
 };
 
+/**
+ * This component renders a small pill-shaped label used to display short status or category text. The `variant` prop selects a color scheme (`default`, `inverted`, `warning`, or `success`), and `size` controls its padding and font size (`small`, `medium`, or `large`). It accepts `children` as its content and an optional `onClick` handler that makes the pill interactive with hover feedback, while the `disabled` prop mutes its styling and disables interaction.
+ */
 const Pill = ({
   variant = 'default',
   size = 'medium',

@@ -19,6 +19,9 @@ export interface InputProps
   type?: string;
 }
 
+/**
+ * This component renders a styled text input built on top of the native input element. It accepts an `inverted` prop to switch the color scheme for dark mode, along with `placeholder` and `type` props to control the displayed hint text and input type. Any other native input attributes are spread onto the element, and the input includes visible focus styling for keyboard accessibility.
+ */
 const Input = ({
   inverted = false,
   placeholder = '',

@@ -21,6 +21,9 @@ export interface RadioGroupProps {
   options: RadioOption[];
 }
 
+/**
+ * This component renders an accessible group of radio buttons built from an array of `options`, each with a label, value, and optional disabled state. It supports both controlled and uncontrolled usage through the `value`/`defaultValue` and `onValueChange` props, and can be laid out horizontally or vertically via the `orientation` prop. The `disabled`, `readOnly`, and `required` props apply group-wide constraints, while individual options can also be disabled on their own. It exposes a `radiogroup` role with `aria-orientation`, and visually hides the native radio inputs while keeping them operable for screen readers and keyboard users.
+ */
 const RadioGroup = ({
   onValueChange,
   disabled = false,

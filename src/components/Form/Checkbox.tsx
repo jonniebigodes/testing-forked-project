@@ -13,6 +13,9 @@ export interface CheckboxProps {
   children?: ReactNode;
 }
 
+/**
+ * This component renders a styled checkbox input paired with an optional label rendered via its `children`. It supports both controlled and uncontrolled usage through the `checked` and `onCheckedChange` props, and exposes `disabled`, `required`, `readOnly`, `name`, and `value` props that map to the native input. The underlying checkbox input is visually hidden but remains focusable and operable for screen readers, while a styled indicator reflects the current checked state.
+ */
 const Checkbox = ({
   checked,
   onCheckedChange,

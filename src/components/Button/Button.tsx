@@ -45,6 +45,9 @@ const getSizeStyles = (size: "small" | "medium" | "large", t: Theme) => {
   return sizeMap[size];
 };
 
+/**
+ * This component is a simple button that displays a label and responds to clicks. It accepts `label` for the button text, `onClick` for the click handler, `size` to control its padding and font size ("small", "medium", or "large"), and `backgroundColor` to override its default color. It renders a native `button` element with hover and transition effects, keeping the interaction and styling logic self-contained.
+ */
 const Button = ({
   backgroundColor,
   size = "medium",

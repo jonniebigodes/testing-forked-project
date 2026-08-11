@@ -91,6 +91,9 @@ const toComparable = (date: DateValue | undefined) =>
 const sameDay = (a: DateValue, b: DateValue) =>
   a.year === b.year && a.month === b.month && a.day === b.day;
 
+/**
+ * This component is a date picker that lets users select a single date or, via the `type` prop, multiple dates from a popover calendar. It supports controlled or uncontrolled open state through `open`/`onOpenChange`, constrains selectable dates with `minValue`, `maxValue`, `isDateDisabled`, and `isDateUnavailable`, and can be `disabled` or `readOnly`. Locale-aware formatting is applied to weekday and month labels via `locale`, `weekdayFormat`, and `monthFormat`. The component manages its own focused month and open state, closes on outside clicks or Escape, and renders an accessible dialog with a labeled grid of day buttons.
+ */
 const DatePicker = ({
   type = 'single',
   value,

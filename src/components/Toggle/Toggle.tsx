@@ -10,6 +10,9 @@ export interface ToggleProps {
   children?: ReactNode;
 }
 
+/**
+ * This component is a two-state toggle switch that lets users switch a setting on or off. It accepts `pressed` and `onPressedChange` to control the pressed state, `disabled` to prevent interaction, `name` for use in forms, and optional `children` rendered as a label next to the switch. It is a controlled button that exposes `aria-pressed` so screen readers can announce its current state, and it animates the thumb position and dims the control when disabled.
+ */
 const Toggle = ({
   onPressedChange,
   pressed,

@@ -16,6 +16,9 @@ export interface ComboboxProps {
   label?: string;
 }
 
+/**
+ * This component is a searchable combobox that lets users filter a list of items by typing and select one or more of them from a dropdown. It accepts `items` to populate the list, `type` to switch between single and multiple selection, `value`/`onValueChange` and `open`/`onOpenChange` for controlled usage, and `disabled`, `required`, `placeholder`, `name`, and `label` for form integration. The component manages its own input, open, and highlighted-item state when left uncontrolled, closes the dropdown on outside clicks, and supports keyboard navigation with arrow keys, Enter, and Escape. It exposes `role="combobox"` and `role="listbox"`/`role="option"` with the appropriate `aria-*` attributes for accessibility.
+ */
 const Combobox = ({
   type = 'single',
   value,

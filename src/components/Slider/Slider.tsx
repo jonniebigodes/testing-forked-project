@@ -21,6 +21,9 @@ export interface SliderProps {
 const clamp = (value: number, min: number, max: number) =>
   Math.min(max, Math.max(min, value));
 
+/**
+ * This component is a draggable slider that lets users select a numeric value within a range by dragging a thumb along a track or using arrow keys. It accepts `value` and `onValueChange` to control the selected value, `min`, `max`, and `step` to define the range and increment, and `orientation` to render the track horizontally or vertically. The `disabled` prop prevents pointer and keyboard interaction and dims the control. It exposes `role="slider"` with `aria-valuemin`, `aria-valuemax`, and `aria-valuenow` so screen readers can announce the current value, and supports Home, End, and arrow key navigation.
+ */
 const Slider = ({
   value,
   onValueChange,

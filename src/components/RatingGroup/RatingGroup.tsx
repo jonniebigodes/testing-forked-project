@@ -32,6 +32,9 @@ const StarIcon = ({ filled }: { filled: boolean }) => (
   </svg>
 );
 
+/**
+ * This component renders a star rating widget where users can select a value between `min` and `max`. It can be used as a controlled or uncontrolled component via `value`/`defaultValue` and calls `onValueChange` when a rating is selected, while `disabled` and `readOnly` props restrict interaction. It supports a `horizontal` or `vertical` `orientation`, previews the rating on hover, exposes `role="radiogroup"`/`role="radio"` attributes with keyboard support for accessibility, and renders a hidden input so the value can be submitted with a `name` in a form.
+ */
 const RatingGroup = ({
   onValueChange,
   disabled = false,

@@ -22,6 +22,9 @@ export interface SelectProps {
   children?: ReactNode;
 }
 
+/**
+ * This component is a custom dropdown select that supports both single and multiple selection via the `type` prop. It accepts a list of `items`, and can be used as a controlled or uncontrolled component through the `value`/`onValueChange` and `open`/`onOpenChange` props. It supports `disabled` and `required` states, closes when clicking outside, handles keyboard interaction on the trigger, and exposes accessible `aria-haspopup`, `aria-expanded`, and `role="listbox"`/`role="option"` attributes. A visually hidden native `select` element is also rendered to keep the component compatible with native form submission.
+ */
 const Select = ({
   type = 'single',
   value,

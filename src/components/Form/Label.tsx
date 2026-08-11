@@ -18,6 +18,9 @@ export interface LabelProps {
   children: ReactNode;
 }
 
+/**
+ * This component renders a styled label element used to describe an associated form control. The `htmlFor` prop links the label to a form element by ID, and the `inverted` prop switches the color scheme for better contrast in dark mode. It simply renders its `children` as the label's text content.
+ */
 const Label = ({ htmlFor, inverted = false, children }: LabelProps) => {
   const t = useTheme();
   const textColor = inverted ? t.color.white : t.color.slate700;
