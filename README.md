@@ -30,3 +30,7 @@ If you are developing a production application, we recommend enabling type-aware
 ```
 
 See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+
+## Available modes
+
+This project has a set of available Chromatic modes that can be configured in the `modes-config/modes.ts` file. These modes are used to run the Storybook stories in different configurations, such as different themes, viewports, or other custom settings. You can add or modify modes as needed for your project.
