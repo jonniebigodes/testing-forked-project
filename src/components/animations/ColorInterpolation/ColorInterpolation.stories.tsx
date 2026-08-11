@@ -23,8 +23,8 @@ export const SlowerSweep: Story = {
   },
 };
 
-/* export const Unstable: Story = {
+export const Unstable: Story = {
   args: {
     durationMs: Math.floor(Math.random() * 12000) + 800,
   },
-}; */
+};

@@ -24,10 +24,9 @@ export const FasterInterrupts: Story = {
   },
 };
 
-/* export const Unstable: Story = {
+export const Unstable: Story = {
   args: {
     keyframeCycleMs: Math.floor(Math.random() * 2800) + 400,
     interruptCycleMs: Math.floor(Math.random() * 900) + 120,
   },
 };
- */

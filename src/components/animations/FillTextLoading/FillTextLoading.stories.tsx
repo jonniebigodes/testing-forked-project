@@ -32,11 +32,11 @@ const UNSTABLE_LABELS = [
   "Stand by",
 ];
 
-/* export const Unstable: Story = {
+export const Unstable: Story = {
   args: {
     label:
       UNSTABLE_LABELS[Math.floor(Math.random() * UNSTABLE_LABELS.length)] ??
       "Loading",
     cycleMs: Math.floor(Math.random() * 5000) + 600,
   },
-}; */
+};

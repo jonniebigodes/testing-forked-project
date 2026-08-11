@@ -24,9 +24,9 @@ export const HigherLift: Story = {
   },
 };
 
-/* export const Unstable: Story = {
+export const Unstable: Story = {
   args: {
     liftPx: Math.floor(Math.random() * 60) + 20,
     cycleMs: Math.floor(Math.random() * 3500) + 800,
   },
-}; */
+};

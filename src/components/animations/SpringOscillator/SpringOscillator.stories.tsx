@@ -23,9 +23,8 @@ export const WiderSpan: Story = {
   },
 };
 
-/* export const Unstable: Story = {
+export const Unstable: Story = {
   args: {
     spanPx: Math.floor(Math.random() * 100) + 24,
   },
 };
- */

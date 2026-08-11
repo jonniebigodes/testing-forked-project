@@ -28,10 +28,9 @@ export const Vertical: Story = {
   },
 };
 
-/* 
 export const Unstable: Story = {
   args: {
     axis: Math.random() < 0.5 ? "horizontal" : "vertical",
     durationMs: Math.floor(Math.random() * 9000) + 1200,
   },
-}; */
+};
