@@ -36,7 +36,7 @@ const SCRAMBLE_POOL = [
   "Pulse",
 ];
 
-/* export const Unstable: Story = {
+export const Unstable: Story = {
   args: {
     words: Array.from(
       { length: Math.floor(Math.random() * 4) + 2 },
@@ -46,4 +46,4 @@ const SCRAMBLE_POOL = [
     wordHoldMs: Math.floor(Math.random() * 4000) + 800,
     scrambleTickMs: Math.floor(Math.random() * 80) + 20,
   },
-}; */
+};

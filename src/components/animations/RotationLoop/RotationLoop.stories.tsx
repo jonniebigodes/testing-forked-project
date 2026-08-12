@@ -23,8 +23,8 @@ export const Slower: Story = {
   },
 };
 
-/* export const Unstable: Story = {
+export const Unstable: Story = {
   args: {
     durationMs: Math.floor(Math.random() * 14000) + 400,
   },
-}; */
+};

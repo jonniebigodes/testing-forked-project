@@ -126,9 +126,9 @@ export const WithClickHandler: Story = {
   },
 };
 
-/* export const Unstable: Story = {
+export const Unstable: Story = {
   args: {
     ...Default.args,
     label: `Unstable Button:${Math.floor(Math.random() * 1000)}`,
   },
-}; */
+};

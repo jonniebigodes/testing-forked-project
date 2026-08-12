@@ -25,7 +25,7 @@ export const WarmTone: Story = {
   },
 };
 
-/* export const Unstable: Story = {
+export const Unstable: Story = {
   args: {
     ringCount: Math.floor(Math.random() * 6) + 2,
     cycleMs: Math.floor(Math.random() * 5000) + 800,
@@ -33,4 +33,4 @@ export const WarmTone: Story = {
       .toString(16)
       .padStart(6, "0")}`,
   },
-}; */
+};

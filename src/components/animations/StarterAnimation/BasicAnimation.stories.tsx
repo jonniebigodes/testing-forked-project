@@ -17,9 +17,9 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {};
 
-/* export const Unstable: Story = {
+export const Unstable: Story = {
   args: {
     tickMs: Math.floor(Math.random() * 4500) + 500,
     widthMaxPx: Math.floor(Math.random() * 400) + 120,
   },
-}; */
+};

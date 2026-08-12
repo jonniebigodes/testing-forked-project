@@ -25,7 +25,7 @@ export const Compact: Story = {
   },
 };
 
-/* export const Unstable: Story = {
+export const Unstable: Story = {
   args: {
     dotCount: Math.floor(Math.random() * 10) + 3,
     cycleMs: Math.floor(Math.random() * 4000) + 400,
@@ -33,4 +33,4 @@ export const Compact: Story = {
       .toString(16)
       .padStart(6, "0")}`,
   },
-}; */
+};
